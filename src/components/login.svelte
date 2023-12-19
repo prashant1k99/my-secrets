@@ -5,7 +5,9 @@
 <div class="hero h-full">
   <div class="hero-content text-center">
     <div class="flex flex-col max-w-xl h-full">
-      <h1 class="text-5xl font-bold">Authorize</h1>
+      <h1 class="text-5xl font-bold" >
+        Hello <span class="text-accent">Agent</span>
+      </h1>
       <p class="py-6">Have secret conversation, share top secret files that will not be stored on any server and every record of it will be deleted once you've seen it.
         <br/>
         Everything is End-to-End Encrypted, giving you the ensurity of your chat not being leaked.</p>
