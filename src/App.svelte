@@ -1,5 +1,11 @@
-<main class="w-screen h-screen">
-  <div class="w-full h-full flex justify-center items-center">
-    Hello World
+<script lang="ts">
+  import Navbar from "./components/navbar.svelte";
+  import Login from "./components/login.svelte"
+</script>
+
+<main class="w-screen max-h-screen max-w-screen h-screen flex-row">
+  <Navbar />
+  <div class="container m-auto h-full bg-base-200 rounded-none sm:rounded-2xl">
+    <Login />
   </div>
 </main>
