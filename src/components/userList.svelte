@@ -25,7 +25,7 @@
   export let qrKey:number
   export let userName:string
 
-  const shareURL = window.location.origin + '?id=' + userId + '&key=' + qrKey
+  const shareURL = window.location.origin + '?id=' + userId + '&key=' + qrKey + 'ashakjfhlkjhlkjfdhaskdjfhkajshdfkjsdhfkjhkj'
 
   let qrImage: QRius | null = null
 
@@ -59,9 +59,9 @@
     <dialog id="showQR" class="modal modal-bottom sm:modal-middle">
       <div class="modal-box">
         <UserQR shareURL={shareURL} qrImage={qrImage} />
-        <div class="modal-action">
-          <form method="dialog">
-            <button class="btn">Close</button>
+        <div class="modal-action flex">
+          <form method="dialog" class="w-full">
+            <button class="btn rounded-lg w-full">Done</button>
           </form>
         </div>
       </div>
