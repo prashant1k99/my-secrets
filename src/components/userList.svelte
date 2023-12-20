@@ -25,11 +25,9 @@
   export let qrKey:number
   export let userName:string
 
-  const shareURL = window.location.href + '?id=' + userId + '&key=' + qrKey
+  const shareURL = window.location.origin + '?id=' + userId + '&key=' + qrKey
 
   let qrImage: QRius | null = null
-
-  let isDarkTheme = localStorage.getItem('theme') === 'dark';
 
   onMount(() => {
     const qr = new QRius({
@@ -57,7 +55,7 @@
 <div class="p-4 h-full overflow-y-auto">
   <div class="pt-2 px-4 flex flex-row justify-between items-center">
     Connection List:
-    <button class="btn" on:click={showModal}>Add Account</button>
+    <button class="btn rounded-lg" on:click={showModal}>Share Profile</button>
     <dialog id="showQR" class="modal modal-bottom sm:modal-middle">
       <div class="modal-box">
         <UserQR shareURL={shareURL} qrImage={qrImage} />
