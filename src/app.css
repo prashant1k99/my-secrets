@@ -9,8 +9,6 @@ body,
 	width: 100%;
 	margin: 0;
 	padding: 0;
-	/* color: var(--foreground); */
-	background-color: var(--background);
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 	-webkit-tap-highlight-color: transparent;
